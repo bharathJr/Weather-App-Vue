@@ -1,5 +1,4 @@
-# vue-weather
-
+This is My first vue app which shows weather for 8 days
 #  for install dependencies
 npm install
 
