@@ -1,18 +1,21 @@
 <template>
   <div id="app" >
-    <img src="./assets/logo1.png">
-    <hello></hello>
+    <img src="./assets/logo1.png" height="55px" width="120px">
+    <!-- <hello></hello> -->
+    <router-view />
+
   </div>
   
 </template>
 
 <script>
-import Hello from './components/Hello'
+// import Hello from './components/Hello'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    // Hello
+    
   }
 }
 </script>
@@ -23,7 +26,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: white ; */
   margin-top: 10px;
 }
 </style>
