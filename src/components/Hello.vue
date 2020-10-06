@@ -72,7 +72,7 @@
               <div class="input-group">
                 <input type="text" placeholder="Enter location" class="form-control" v-model="city" />
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary"  type="submit">
+                  <button class="btn btn-primary"  type="submit">
                     Submit
                   </button>
                 </div>
