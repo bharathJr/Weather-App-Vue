@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
       <el-tabs v-model="activeName" @tab-click="handleClick">
-  <el-tab-pane label="Current" name="Current">  
+  <el-tab-pane label="Today" name="Current">  
             <div id="app" :class="typeof weather.main != 'undefined' && (weathers == null) ? 'null' : 
                                                                         (weathers == 'Clouds') ? 'cloud' : 
                                                                         (weathers == 'Clear') ? 'clear' : 
@@ -38,7 +38,7 @@
     </main>
   </div>
       </el-tab-pane>
-    <el-tab-pane label="Summary" name="Summary">
+    <el-tab-pane label="Week" name="Summary">
           <div class="container">
           <el-col :span="24" class="toolbar">
       <el-form :inline="true">
@@ -100,7 +100,7 @@
     </el-col>
   </div>
     </el-tab-pane>
-    <el-tab-pane label="Details" name="second">  
+    <el-tab-pane label="Today Details" name="second">  
             <div class="container">
       <div class="my-5">
         <form v-on:submit.prevent="getData">
